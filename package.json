@@ -4,7 +4,11 @@
   },
   "scripts": {
     "dev": "turbo run dev",
+    "dev:client": "npm run dev --workspace client",
+    "dev:api": "npm run dev --workspace api",
     "build": "turbo run build",
+    "build:client": "npm run build --workspace client",
+    "build:api": "npm run build --workspace api",
     "start": "node apps/api/dist/main"
   },
   "workspaces": [
